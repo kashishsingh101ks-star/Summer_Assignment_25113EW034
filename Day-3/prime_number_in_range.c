@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-// Function to check prime
+
 int isPrime(int n) {
     if (n < 2) return 0;
     if (n == 2) return 1;
