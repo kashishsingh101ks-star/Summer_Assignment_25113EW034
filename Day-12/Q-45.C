@@ -23,4 +23,4 @@ int main(){
         printf("%d is not plaindrome\n",n);
     
     return 0;
-} 
+}  
