@@ -2,109 +2,112 @@
 
 int main()
 {
+    int choice;
     int score = 0;
-    int userAnswer;
-    int totalQuestions = 5;
 
-    printf("Welcome to the Quiz Application!\n");
-    printf("Answer each question by entering 1, 2, 3, or 4.\n\n");
+    printf("\n=================================\n");
+    printf("      QUIZ APPLICATION");
+    printf("\n=================================\n");
 
-    printf("Q1. What is the capital of France?\n");
-    printf("1. Berlin\n2. Madrid\n3. Paris\n4. Rome\n");
-    printf("Your answer: ");
-    scanf("%d", &userAnswer);
-    while (getchar() != '\n'); 
+    // Question 1
+    printf("\n1. Which language is known as the mother of all programming languages?\n");
+    printf("1. C\n2. Java\n3. Python\n4. Assembly\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
 
-    if (userAnswer == 3)
+    if (choice == 4)
     {
-        printf("Correct!\n\n");
+        printf("Correct!\n");
         score++;
     }
     else
     {
-        printf("Wrong! The correct answer was Paris.\n\n");
+        printf("Wrong! Correct answer is Assembly.\n");
     }
 
+    // Question 2
+    printf("\n2. Who developed the C programming language?\n");
+    printf("1. Dennis Ritchie\n2. James Gosling\n3. Bjarne Stroustrup\n4. Guido van Rossum\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
 
-    printf("Q2. Which language is mainly used for Android app development?\n");
-    printf("1. Python\n2. Kotlin\n3. Swift\n4. C++\n");
-    printf("Your answer: ");
-    scanf("%d", &userAnswer);
-    while (getchar() != '\n');
-
-    if (userAnswer == 2)
+    if (choice == 1)
     {
-        printf("Correct!\n\n");
+        printf("Correct!\n");
         score++;
     }
     else
     {
-        printf("Wrong! The correct answer was Kotlin.\n\n");
+        printf("Wrong! Correct answer is Dennis Ritchie.\n");
     }
 
-    printf("Q3. How many continents are there on Earth?\n");
-    printf("1. 5\n2. 6\n3. 7\n4. 8\n");
-    printf("Your answer: ");
-    scanf("%d", &userAnswer);
-    while (getchar() != '\n');
+    // Question 3
+    printf("\n3. Which symbol is used to end a statement in C?\n");
+    printf("1. .\n2. ;\n3. :\n4. ,\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
 
-    if (userAnswer == 3)
+    if (choice == 2)
     {
-        printf("Correct!\n\n");
+        printf("Correct!\n");
         score++;
     }
     else
     {
-        printf("Wrong! The correct answer was 7.\n\n");
+        printf("Wrong! Correct answer is ;\n");
     }
 
-    printf("Q4. Who wrote the Ramayana?\n");
-    printf("1. Vyasa\n2. Valmiki\n3. Kalidasa\n4. Tulsidas\n");
-    printf("Your answer: ");
-    scanf("%d", &userAnswer);
-    while (getchar() != '\n');
+    // Question 4
+    printf("\n4. Which loop is guaranteed to execute at least once?\n");
+    printf("1. for\n2. while\n3. do-while\n4. None\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
 
-    if (userAnswer == 2)
+    if (choice == 3)
     {
-        printf("Correct!\n\n");
+        printf("Correct!\n");
         score++;
     }
     else
     {
-        printf("Wrong! The correct answer was Valmiki.\n\n");
+        printf("Wrong! Correct answer is do-while.\n");
     }
 
-    printf("Q5. What is the chemical symbol for water?\n");
-    printf("1. H2O\n2. O2\n3. CO2\n4. NaCl\n");
-    printf("Your answer: ");
-    scanf("%d", &userAnswer);
-    while (getchar() != '\n');
+    // Question 5
+    printf("\n5. Which function is used to print output in C?\n");
+    printf("1. scanf()\n2. display()\n3. printf()\n4. input()\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
 
-    if (userAnswer == 1)
+    if (choice == 3)
     {
-        printf("Correct!\n\n");
+        printf("Correct!\n");
         score++;
     }
     else
     {
-        printf("Wrong! The correct answer was H2O.\n\n");
+        printf("Wrong! Correct answer is printf().\n");
     }
 
-    printf("----- Quiz Over -----\n");
-    printf("You scored %d out of %d.\n", score, totalQuestions);
+    // Final Score
+    printf("\n=================================\n");
+    printf("Quiz Completed!\n");
+    printf("Your Score = %d out of 5\n", score);
 
-    if (score == totalQuestions)
+    if (score == 5)
     {
-        printf("Excellent! You got a perfect score!\n");
+        printf("Excellent! Perfect Score.\n");
     }
     else if (score >= 3)
     {
-        printf("Good job! You did pretty well.\n");
+        printf("Good Job! Keep Learning.\n");
     }
     else
     {
-        printf("Don't worry, you can do better next time. Keep practicing!\n");
+        printf("You need more practice.\n");
     }
+
+    printf("=================================\n");
 
     return 0;
 }

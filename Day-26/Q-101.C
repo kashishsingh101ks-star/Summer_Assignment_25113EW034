@@ -7,7 +7,7 @@ int main()
     int secretNumber, userGuess, totalAttempts;
     srand(time(0));
 
-    secretNumber = (rand() % 100) + 1;
+    secretNumber = (rand() % 100) + 1;78;
     totalAttempts = 0;
 
     printf("Welcome to the Number Guessing Game!\n");
