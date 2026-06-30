@@ -1,7 +1,1 @@
 *.exe
-# Ignore EVERYTHING
-*
-
-# But NOT your assignment folder
-!Summer_Assignment_25113EW034/
-!Summer_Assignment_25113EW034/**
